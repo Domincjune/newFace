@@ -17,10 +17,10 @@ angular
   .config(function(LoopBackResourceProvider, $routeProvider) {
 
     // Use a custom auth header instead of the default 'Authorization'
-    LoopBackResourceProvider.setAuthHeader('X-Access-Token');
+    //LoopBackResourceProvider.setAuthHeader('X-Access-Token');
 
     // Change the URL where to access the LoopBack REST API server
-    LoopBackResourceProvider.setUrlBase('http://api.example.com/');
+    //LoopBackResourceProvider.setUrlBase('http://api.example.com/');
 
     $routeProvider
       .when('/', {
