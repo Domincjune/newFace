@@ -1,0 +1,44 @@
+  <!-- Containers
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row" >
+          <div class="col-lg-3" ng-repeat="iframe in iframes">
+            <div class="bs-component">
+              
+              <div class="panel panel-default transparentBackground">
+                <div class="panel-body 0Padding">
+                  <iframe id="{{iframe.id}}" ng-src="{{getIframeSrc(iframe.id)}}" width="100%" frameborder="0"/>
+                </div>
+              </div>
+
+            </div>
+          </div>   
+        </div>
+      </div>
+
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-component">
+                <ul class="pagination pagination-sm">
+                  <li class="disabled"><a href="#">&laquo;</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+     <!--  <dir-pagination-controls template-url="dirPagination.tpl.html"></dir-pagination-controls> -->
+      <!-- http://www.michaelbromley.co.uk/blog/108/paginate-almost-anything-in-angularjs -->
+
+       
+       
+
+

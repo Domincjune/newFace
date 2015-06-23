@@ -1,0 +1,26 @@
+{
+	"name": "videos1",
+	"plural": "videos1",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"title": {
+			"type": "string",
+			"required": true
+		},
+		"id": {
+			"type": "number",
+			"required": true
+		},
+		"sponsor": {
+			"type": "string"
+		}
+	},
+	"validations": [],
+	"relations": {},
+	"acls": [],
+	"methods": []
+}
