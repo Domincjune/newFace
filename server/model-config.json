@@ -26,7 +26,7 @@
 		"dataSource": "mydb",
 		"public": true
 	},
-	"videos1": {
+	"sponsor": {
 		"dataSource": "mydb",
 		"public": true
 	}

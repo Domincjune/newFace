@@ -2,12 +2,13 @@
       ================================================== -->
       <div class="bs-docs-section">
         <div class="row" >
-          <div class="col-lg-3" ng-repeat="iframe in iframes">
+          <div class="col-lg-3" ng-repeat="video in videos">
             <div class="bs-component">
               
               <div class="panel panel-default transparentBackground">
                 <div class="panel-body 0Padding">
-                  <iframe id="{{iframe.id}}" ng-src="{{getIframeSrc(iframe.id)}}" width="100%" frameborder="0"/>
+                 <!--  <iframe id="{{iframe.id}}" ng-src="{{getIframeSrc(iframe.id)}}" width="100%" frameborder="0"/> -->
+                 <h1 >{{video.id}}, {{video.videoID}}, {{video.title}}</h1>
                 </div>
               </div>
 

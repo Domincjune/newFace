@@ -8,12 +8,11 @@
 		"connector": "mysql"
 	},
 	"mydb": {
-	    "name": "mydb",
-	    "connector": "mysql",
-	    "host": "localhost",
-	    "database" : "newFace",
-	    "username" : "root",
-	    "password" : ""
+		"host": "localhost",
+		"database": "newFace1",
+		"username": "root",
+		"password": "",
+		"name": "mydb",
+		"connector": "mysql"
 	}
-
 }

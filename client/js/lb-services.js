@@ -1441,7 +1441,8 @@ module.factory(
          *
          * @param {Object=} parameters Request parameters.
          *
-         *  - `id` – `{*}` - PersistedModel id
+         *   This method does not accept any parameters.
+         *   Supply an empty object or omit this argument altogether.
          *
          * @param {Object} postData Request data.
          *
@@ -1465,41 +1466,6 @@ module.factory(
         "prototype$updateAttributes": {
           url: urlBase + "/videos/:id",
           method: "PUT"
-        },
-
-        /**
-         * @ngdoc method
-         * @name lbServices.Videos#status
-         * @methodOf lbServices.Videos
-         *
-         * @description
-         *
-         * <em>
-         * (The remote method definition does not provide any description.)
-         * </em>
-         *
-         * @param {Object=} parameters Request parameters.
-         *
-         *   This method does not accept any parameters.
-         *   Supply an empty object or omit this argument altogether.
-         *
-         * @param {function(Object,Object)=} successCb
-         *   Success callback with two arguments: `value`, `responseHeaders`.
-         *
-         * @param {function(Object)=} errorCb Error callback with one argument:
-         *   `httpResponse`.
-         *
-         * @returns {Object} An empty reference that will be
-         *   populated with the actual data once the response is returned
-         *   from the server.
-         *
-         * Data properties:
-         *
-         *  - `status` – `{string=}` - 
-         */
-        "status": {
-          url: urlBase + "/videos/status",
-          method: "GET"
         },
       }
     );
@@ -1643,13 +1609,13 @@ module.factory(
 
 /**
  * @ngdoc object
- * @name lbServices.Videos1
- * @header lbServices.Videos1
+ * @name lbServices.Sponsor
+ * @header lbServices.Sponsor
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `Videos1` model.
+ * A $resource object for interacting with the `Sponsor` model.
  *
  * ## Example
  *
@@ -1659,17 +1625,17 @@ module.factory(
  *
  */
 module.factory(
-  "Videos1",
+  "Sponsor",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/videos1/:id",
+      urlBase + "/sponsor/:id",
       { 'id': '@id' },
       {
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#create
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#create
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1696,18 +1662,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "create": {
-          url: urlBase + "/videos1",
+          url: urlBase + "/sponsor",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#createMany
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#createMany
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1734,19 +1700,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/videos1",
+          url: urlBase + "/sponsor",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#upsert
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#upsert
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1773,18 +1739,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "upsert": {
-          url: urlBase + "/videos1",
+          url: urlBase + "/sponsor",
           method: "PUT"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#exists
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#exists
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1809,14 +1775,14 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/videos1/:id/exists",
+          url: urlBase + "/sponsor/:id/exists",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#findById
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#findById
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1840,18 +1806,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "findById": {
-          url: urlBase + "/videos1/:id",
+          url: urlBase + "/sponsor/:id",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#find
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#find
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1873,19 +1839,19 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "find": {
           isArray: true,
-          url: urlBase + "/videos1",
+          url: urlBase + "/sponsor",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#findOne
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#findOne
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1907,18 +1873,18 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "findOne": {
-          url: urlBase + "/videos1/findOne",
+          url: urlBase + "/sponsor/findOne",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#updateAll
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#updateAll
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1945,14 +1911,14 @@ module.factory(
          * This method returns no data.
          */
         "updateAll": {
-          url: urlBase + "/videos1/update",
+          url: urlBase + "/sponsor/update",
           method: "POST"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#deleteById
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#deleteById
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -1975,14 +1941,14 @@ module.factory(
          * This method returns no data.
          */
         "deleteById": {
-          url: urlBase + "/videos1/:id",
+          url: urlBase + "/sponsor/:id",
           method: "DELETE"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#count
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#count
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -2007,14 +1973,14 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/videos1/count",
+          url: urlBase + "/sponsor/count",
           method: "GET"
         },
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#prototype$updateAttributes
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#prototype$updateAttributes
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -2041,11 +2007,11 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/videos1/:id",
+          url: urlBase + "/sponsor/:id",
           method: "PUT"
         },
       }
@@ -2055,8 +2021,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#updateOrCreate
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#updateOrCreate
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -2083,15 +2049,15 @@ module.factory(
          *
          * <em>
          * (The remote method definition does not provide any description.
-         * This usually means the response is a `Videos1` object.)
+         * This usually means the response is a `Sponsor` object.)
          * </em>
          */
         R["updateOrCreate"] = R["upsert"];
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#update
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#update
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -2121,8 +2087,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#destroyById
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#destroyById
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -2148,8 +2114,8 @@ module.factory(
 
         /**
          * @ngdoc method
-         * @name lbServices.Videos1#removeById
-         * @methodOf lbServices.Videos1
+         * @name lbServices.Sponsor#removeById
+         * @methodOf lbServices.Sponsor
          *
          * @description
          *
@@ -2176,13 +2142,13 @@ module.factory(
 
     /**
     * @ngdoc property
-    * @name lbServices.Videos1#modelName
-    * @propertyOf lbServices.Videos1
+    * @name lbServices.Sponsor#modelName
+    * @propertyOf lbServices.Sponsor
     * @description
     * The name of the model represented by this $resource,
-    * i.e. `Videos1`.
+    * i.e. `Sponsor`.
     */
-    R.modelName = "Videos1";
+    R.modelName = "Sponsor";
 
 
     return R;

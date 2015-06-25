@@ -1,6 +1,6 @@
 {
-	"name": "videos",
-	"plural": "videos",
+	"name": "sponsor",
+	"plural": "sponsor",
 	"base": "PersistedModel",
 	"idInjection": true,
 	"options": {
@@ -11,19 +11,9 @@
 			"type": "number",
 			"required": true
 		},
-		"videoID": {
+		"source": {
 			"type": "string",
 			"required": true
-		},
-		"title": {
-			"type": "string",
-			"required": true
-		},
-		"category": {
-			"type": "string"
-		},
-		"parent": {
-			"type": "number"
 		}
 	},
 	"validations": [],
