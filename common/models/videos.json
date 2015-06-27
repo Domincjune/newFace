@@ -1,0 +1,33 @@
+{
+	"name": "videos",
+	"plural": "videos",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"id": {
+			"type": "number",
+			"required": true
+		},
+		"videoID": {
+			"type": "string",
+			"required": true
+		},
+		"title": {
+			"type": "string",
+			"required": true
+		},
+		"category": {
+			"type": "string"
+		},
+		"parent": {
+			"type": "number"
+		}
+	},
+	"validations": [],
+	"relations": {},
+	"acls": [],
+	"methods": []
+}

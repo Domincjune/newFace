@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "newfaceangular",
   "version": "0.0.0",
@@ -32,3 +33,6 @@
     "node": ">=0.10.0"
   }
 }
+=======
+{"name":"newFace","version":"1.0.0","main":"server/server.js","scripts":{"pretest":"jshint ."},"dependencies":{"compression":"^1.0.3","cors":"^2.5.2","errorhandler":"^1.1.1","loopback":"^2.14.0","loopback-boot":"^2.6.5","loopback-datasource-juggler":"^2.19.0","serve-favicon":"^2.0.1","loopback-connector-mysql":"~2.1.1"},"optionalDependencies":{"loopback-explorer":"^1.1.0"},"devDependencies":{"jshint":"^2.5.6"},"repository":{"type":"","url":""},"description":"newFace"}
+>>>>>>> 432a7b89a054250e82f0383d05407e43c16017d5
