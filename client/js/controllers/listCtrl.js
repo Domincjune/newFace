@@ -16,8 +16,6 @@ angular.module('newFaceAngularApp')
 /*    $scope.count = Videos.count();
     console.log($scope.count);*/
 
-    $scope.iframes = [{ id: 'XGSy3_Czz8k'},{ id: 'XGSy3_Czz8k'},{ id: 'XGSy3_Czz8k'},{ id: 'XGSy3_Czz8k'},{ id: 'XGSy3_Czz8k'},{ id: 'XGSy3_Czz8k'}]
-
     $scope.getIframeSrc = function(id) {
       return $sce.trustAsResourceUrl('http://xvideos.com/embedframe/' + id)
   	  //return 'http://flashservice.xvideos.com/embedframe/' + id;

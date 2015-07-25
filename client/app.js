@@ -27,9 +27,9 @@ angular
         templateUrl: 'views/list.html',
         controller: 'ListCtrl'
       })
-      .when('/single', {
-        templateUrl: 'views/single.html',
-        controller: 'SingleCtrl'
+      .when('/listItem', {
+        templateUrl: 'views/listItem.html',
+        controller: 'ListItemCtrl'
       })
       .otherwise({
         redirectTo: '/'
