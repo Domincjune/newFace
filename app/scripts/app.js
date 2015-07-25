@@ -24,13 +24,13 @@ angular
       'http://flashservice.xvideos.com/**'
     ]);
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/list', {
+        templateUrl: 'views/list.html',
+        controller: 'ListCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/item', {
+        templateUrl: 'views/item.html',
+        controller: 'ItemCtrl'
       })
       .otherwise({
         redirectTo: '/'

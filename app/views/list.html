@@ -2,16 +2,13 @@
       ================================================== -->
       <div class="bs-docs-section">
         <div class="row" >
-
-          <div class="col-lg-3" dir-paginate="video in videos | itemsPerPage: 20">
-            <div class="bs-component"  title="{{ video.title }}">
+          <div class="col-lg-3" ng-repeat="iframe in iframes">
+            <div class="bs-component">
               
               <div class="panel panel-default transparentBackground">
-                <div class="panel-header title">
-                {{ video.title | limitTo : 38 : 0}}
-                </div>
                 <div class="panel-body 0Padding">
-                  <iframe id="{{video.id}}" ng-src="{{getIframeSrc(video.videoID)}}" width="100%" frameborder="0" title = "{{video.title}}"/>
+                  <!-- <iframe id="{{iframe.id}}" ng-src="{{getIframeSrc(iframe.id)}}" width="100%" frameborder="0"/> -->
+                  <h1> {{iframe.id}}</h1>
                 </div>
               </div>
 
@@ -20,8 +17,6 @@
         </div>
       </div>
 
-
-<!-- 
       <div class="bs-docs-section">
 
         <div class="row">
@@ -39,12 +34,9 @@
               </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
-      
-
-      <dir-pagination-controls></dir-pagination-controls>
-     <!--  <dir-pagination-controls template-url="dirPagination.tpl.html"></dir-pagination-controls> -->
+      <dir-pagination-controls template-url="dirPagination.tpl.html"></dir-pagination-controls>
       <!-- http://www.michaelbromley.co.uk/blog/108/paginate-almost-anything-in-angularjs -->
 
        

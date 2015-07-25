@@ -4,3 +4,9 @@
 .0Padding {
 	padding : 0px;
 }
+.title{
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	padding: 0px 12px;
+}

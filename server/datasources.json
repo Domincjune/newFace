@@ -1,18 +1,18 @@
 {
-	"db": {
-		"name": "db",
-		"connector": "memory"
-	},
-	"mysqlIDs": {
-		"name": "mysqlIDs",
-		"connector": "mysql"
-	},
-	"mydb": {
-		"host": "localhost",
-		"database": "newFace1",
-		"username": "root",
-		"password": "",
-		"name": "mydb",
-		"connector": "mysql"
-	}
+    "db": {
+        "name": "db",
+        "connector": "memory"
+    },
+    "mysqlIDs": {
+        "name": "mysqlIDs",
+        "connector": "mysql"
+    },
+    "mydb": {
+        "host": "localhost",
+        "database": "newFace",
+        "username": "root",
+        "password": "",
+        "name": "mydb",
+        "connector": "mysql"
+    }
 }
